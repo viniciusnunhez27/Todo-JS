@@ -11,7 +11,7 @@ const inputValue = event.target.add.value.trim()
      todosContainer.innerHTML += ` 
     <li class="list-group-item d-flex justify-content-between align-items-center" data-todo="${inputValue}">
       <span>${inputValue}</span>
-     <i class="far fa-trash-alt delete" data-trash="${inputValue}"></i>
+     <i class="far fa-trash-alt" data-trash="${inputValue}"></i>
       </li>
      `
   
@@ -19,11 +19,19 @@ const inputValue = event.target.add.value.trim()
   }
 })
 
+const removeTodo = clickedElement => {
+  const dataTrash = clickedElement.dataset.trash
+  const todo = document.querySelector(`[data-todo="${dataTrash}"]`)
+
+  if(dataTrash) {
+    todo.remove()
+   }
+}
+
 todosContainer.addEventListener('click', event => {
    const clickedElement = event.target
-   if(clickedElement.dataset.trash) {
-(document.querySelector(`[data-todo="${clickedElement.dataset.trash}"]`)).remove()
-   }
+   removeTodo(clickedElement)
+  
 })
 
 
