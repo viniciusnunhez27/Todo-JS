@@ -2,8 +2,11 @@
 
 ## 🚀 Começando
 
-Todo JS Projeto desenvolvido com HTML, CSS , Javascript e BootStrap. 
+Todo JS  foi um projeto desenvolvido com HTML, CSS , Javascript e BootStrap. 
 
+Aprendizado neste projeto. 
+
+Manipulação do DOM, Consumo da biblioteca Bootstrap.
 
 
 ![To-do List](https://user-images.githubusercontent.com/66691283/197759285-b1e8a7e0-65a4-4e8b-b040-aca7b0611044.gif)
